@@ -1,10 +1,5 @@
 ---
 title: Camera
-description: Fork of apache/cordova-plugin-camera, incorporating PR 814 for compatibility with SDK 33.
----
-
----
-title: Camera
 description: Take pictures with the device camera.
 ---
 <!---

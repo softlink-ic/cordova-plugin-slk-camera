@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-camera",
+  "name": "cordova-plugin-slk-camera",
   "version": "6.0.1-dev",
   "description": "Cordova Camera Plugin",
   "types": "./types/index.d.ts",

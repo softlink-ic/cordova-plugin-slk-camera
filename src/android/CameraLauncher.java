@@ -1269,6 +1269,7 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
         // delete the duplicate file if the difference is 2 for file URI or 1 for Data URL
         if ((currentNumOfImages - numPics) == diff) {
             cursor.moveToLast();
+            @SupressLint("Range")
             int id = Integer.valueOf(cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media._ID)));
             if (diff == 2) {
                 id--;

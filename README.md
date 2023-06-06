@@ -21,6 +21,19 @@ description: Take pictures with the device camera.
 #         under the License.
 -->
 
+# cordova-plugin-slk-camera
+This plugin is based off https://github.com/apache/cordova-plugin-camera, with PR 814 (https://github.com/apache/cordova-plugin-camera#814) applied.
+
+This is required to support the migration to Cordova 12 and newer Android APIs.
+
+In order to upgrade this plugin:
+
+- First, check whether the pull request has been merged into the main plugin. If so, this plugin is no longer required, as long as you upgrade to a version that contains the pull request changes.
+- Pull the changes from the new version (download from the release tag, NOT master.)
+- Commit these changes into the cordova-plugin-slk-camera on the master branch
+- Create a new x.x.x-with-PR-814 branch based off of master (replacing x.x.x with the version, e.g. 6.0.1-with-PR-814)
+- Include the plugin in your Liberty Link cordova build
+
 # cordova-plugin-camera
 
 [![Android Testsuite](https://github.com/apache/cordova-plugin-camera/actions/workflows/android.yml/badge.svg)](https://github.com/apache/cordova-plugin-camera/actions/workflows/android.yml) [![Chrome Testsuite](https://github.com/apache/cordova-plugin-camera/actions/workflows/chrome.yml/badge.svg)](https://github.com/apache/cordova-plugin-camera/actions/workflows/chrome.yml) [![iOS Testsuite](https://github.com/apache/cordova-plugin-camera/actions/workflows/ios.yml/badge.svg)](https://github.com/apache/cordova-plugin-camera/actions/workflows/ios.yml) [![Lint Test](https://github.com/apache/cordova-plugin-camera/actions/workflows/lint.yml/badge.svg)](https://github.com/apache/cordova-plugin-camera/actions/workflows/lint.yml)
